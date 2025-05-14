@@ -214,11 +214,8 @@
 
     /* Lâmpada Interativa */
     .lamp-container {
-      position: absolute;
-      top: 50px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: block;
+      transform: translateX(0%);
+      display: flex;
       flex-direction: column;
       align-items: center;
       z-index: 2;
@@ -235,6 +232,7 @@
       width: 80px;
       height: 80px;
       background: url('images/lampada-off.png') center/contain no-repeat;
+      display: block;
       cursor: pointer;
       transition: var(--transition);
       filter: drop-shadow(0 0 10px rgba(255,215,0,0.5));
